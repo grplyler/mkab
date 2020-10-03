@@ -1,0 +1,11 @@
+server {
+
+        server_name {{ domain }};
+
+        location {{ path }} {
+                
+                root /var/www/{{ root }};
+                index index.html;
+
+        }
+}
