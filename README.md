@@ -76,7 +76,7 @@ If you like this project, here are some ways you can contribute!
 ## Todo
 
 - [] Add support for AWS Polly
-- [] Add more convient way to manage API config
+- [] Add more convenient way to manage API config
 - [] Add support for ssml for more control of voicing synthesis
 - [] Add additional features to the command line interface
 - [] Add more advanced text sanitization algorithms
