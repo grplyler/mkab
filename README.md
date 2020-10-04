@@ -1,9 +1,9 @@
 
 <h1 align="center">
-  nginup
+  mkab
 </h1>
 
-<h3 align="center">A command-line for quickly generating nginx configuration</h3>
+<h3 align="center">Add some sanity to your reading workload. Make neural network sythesized audiobooks from text files.</h3>
 
 ![](carbon.png)
 
@@ -19,35 +19,34 @@
 
 
 ## Key Features
+* **AWS Polly and Google Text to Speech Support**
+  * Note: AWS Polly support coming soon
 * **Simple command line interface**
-* **Lighting-fast nginx site configuration**
-* **Extensible template based config using the beloved `Jinja2`**
+  * `mkab synth reading.txt -o reading.ogg`
+* **Fast! Uses concurrent requests to sythesize audio**
+  * Note: Feature under construction
 
 
 ## Requirements
 
 * Python 3
-* pip
-* certbot
-* certbot-nginx
+* Google Cloud API Key
+* AWS API Key (client_id and secret)
 
 ## Install
 
 *Install from source*
 
-The following commands install an `ng` and `nginup` script to your `$PATH`
+The following commands install adds `mkab` to your `$PATH`
 
 ```
-git clone https://github.com/grplyler/nginup.git
-cd nginup
+git clone https://github.com/grplyler/mkab.git
+cd mkab
 python setup.py install
 ```
 
 ## Develop
 
-The following commands install an `ng` and `nginup` script to your `$PATH`
-but they link back to the source so changes made in development will be reflected
-in the command install in your $PATH.
 
 ```
 git clone https://github.com/grplyler/nginup.git
@@ -58,28 +57,12 @@ python setup.py develop
 ## Examples
 
 
-**Create a static site**
-```
-$ ng static /var/www/blog.mysite.com -d blog.mysite.com
-```
+**Coming soon**
 
-`-d` specifived a sub-domain based virtualhost for routing.
-
-**Create a static site with SSL (COMING SOON)**
-
-```
-$ ng static /var/www/blog.mysite.com --ssl
-```
-
-`--ssl` will instruct nginup to install a Let's Encrypt TLS Certificate
 
 ## Rationale
 
-I created this tools to save time spinning up new `static`, `reverse proxy` and `php` virtualhosts in nginx.
-
-## Disclaimer
-
-The code and executables in this project are a **work in progress**. While they can be used an tools/toys and what have you, they are not production ready and **shouldn't be used on crital systems** without understanding these disclaimers. 
+I created this tools to handle the ridiculous amount of reading I had in college. As a pretty good auditory learner with pretty bad dyslexia, it really helped! And in most cases, I felt like my comprehension was much better.
 
 
 ## Contributing
@@ -92,8 +75,11 @@ If you like this project, here are some ways you can contribute!
 
 ## Todo
 
-* [] Add SSL Autoconfig with Let's Encrypt Cerbot
-* [] Add PHP Config Generation Template
+* [] Add support for AWS Polly
+* [] Add more convient way to manage API config
+* [] Add additional features to the command line interface
+* [] Create a web interface
+* [] Deploy as a service there users can buy tokens that let them generate audiobooks instead of having to have an AWS or GCP API key
 
 ## License
 
