@@ -75,11 +75,13 @@ If you like this project, here are some ways you can contribute!
 
 ## Todo
 
-* [] Add support for AWS Polly
-* [] Add more convient way to manage API config
-* [] Add additional features to the command line interface
-* [] Create a web interface
-* [] Deploy as a service there users can buy tokens that let them generate audiobooks instead of having to have an AWS or GCP API key
+- [] Add support for AWS Polly
+- [] Add more convient way to manage API config
+- [] Add support for ssml for more control of voicing synthesis
+- [] Add additional features to the command line interface
+- [] Add more advanced text sanitization algorithms
+- [] Create a web interface
+- [] Deploy as a service there users can buy tokens that let them generate audiobooks instead of having to have an AWS or GCP API key
 
 ## License
 
