@@ -26,8 +26,8 @@ def synth(textfile,voice, output):
     # Synthesize
     log.info(f"Synthesizing {len(chunks)} chunks with {voice}")
 
-    # for i, chunk in enumerate(chunks):
-    #     lib.text_to_wav(voice, chunk, filename=f"{output}_{i}")
+    for i, chunk in enumerate(chunks):
+        lib.text_to_wav(voice, chunk, filename=f"{output}_{i}")
 
     # Combine
     lib.combine(output, 0, len(chunks), fmt="ogg")
